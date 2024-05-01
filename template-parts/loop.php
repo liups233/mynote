@@ -52,6 +52,7 @@ do_action( 'mynote_loop_before' );
 									mynote_comment_button();
 									mynote_read_button();
 									mynote_edit_button();
+									mynote_show_category();
 								?>
 							</div>
 						<?php endif; ?>
