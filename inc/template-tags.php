@@ -408,7 +408,7 @@ if ( ! function_exists( 'mynote_show_category' ) ) {
 		if ( $categories ) {
 			echo '<div style="float: right; text-align: right;">';
 			foreach ( $categories as $category ) {
-				echo '<span class="dashicons dashicons-category"></span><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a> ';
+				echo '<i class="fa fa-folder-open" aria-hidden="true"></i><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a> ';
 			}
 			echo '</div>';
 		}
