@@ -399,6 +399,22 @@ if ( ! function_exists( 'mynote_read_button' ) ) {
 	}
 }
 
+/** CUSTOM
+ * Show category on cards
+ */
+if ( ! function_exists( 'mynote_show_category' ) ) {
+	function mynote_show_category() {
+		$categories = get_the_category();
+		if ( $categories ) {
+			echo '<div style="float: right; text-align: right;">';
+			foreach ( $categories as $category ) {
+				echo '<span class="dashicons dashicons-category"></span><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a> ';
+			}
+			echo '</div>';
+		}
+	}
+}
+
 /**
  * Post figure.
  *
