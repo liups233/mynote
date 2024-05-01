@@ -55,6 +55,7 @@ function mynote_social_links_icons() {
 		'wordpress.com'   => 'fab fa-wordpress-simple wordpress',
 		'yelp.com'        => 'fab fa-yelp yelp',
 		'youtube.com'     => 'fab fa-youtube youtube',
+		't.me'            => 'fab fa-telegram telegram',
 	);
 
 	return $social_links_icons;
