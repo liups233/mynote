@@ -501,7 +501,7 @@ function mynote_site_icon() {
 	$fallback_url = '';
 
 	if ( version_compare( $GLOBALS['wp_version'], '4.3', '>' ) ) {
-		return esc_url( get_site_icon_url( '32', $fallback_url ) );
+		return esc_url( get_site_icon_url( '150', $fallback_url ) );
 	}
 	return '';
 }
