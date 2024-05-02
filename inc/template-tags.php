@@ -423,7 +423,7 @@ if ( ! function_exists( 'mynote_show_category' ) ) {
 function mynote_post_figure() {
 	$thumbnail_caption = get_the_post_thumbnail_caption();
 	?>
-		<figure>
+		<figure style="text-align: center;">
 			<?php
 				the_post_thumbnail(
 					'',
