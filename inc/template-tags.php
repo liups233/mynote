@@ -595,7 +595,7 @@ function mynote_category_labels() {
  */
 if ( ! function_exists( 'mynote_site_info' ) ) {
 	function mynote_site_info() {
-		echo esc_html__( 'Copyright', 'mynote' ) . ' &copy; ' . wp_date( 'Y' ) . ' <strong><a href="' . esc_url( get_site_url() ) . '">' . get_bloginfo( 'name' ) . '</a></strong>. ' . esc_html__( 'All rights reserved.', 'mynote' ) . ' ';
+		echo esc_html__( 'Copyright', 'mynote' ) . ' &copy; ' . wp_date( 'Y' ) . ' <strong><a href="' . esc_url( get_site_url() ) . '">' . get_bloginfo( 'name' ) . '</a></strong>. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer"> CC BY-NC-SA 4.0 </a><br>';
 
 		// Keeping the theme credit link encourages me to improve this theme better. Thank you.
 		$theme_link = 'https://terryl.in/';
