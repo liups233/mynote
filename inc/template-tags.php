@@ -483,8 +483,10 @@ if ( ! function_exists( 'mynote_author_posted_date' ) ) {
 			get_the_time( 'c' ),
 			sprintf(
 				// translators: %s: human-readable time difference.
-				_x( 'written %s ago', '%s', 'mynote' ),
-				human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) )
+				// _x( 'written %s ago', '%s', 'mynote' ),
+				// human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) )
+				"发布于 %s",
+				get_the_time( 'Y-m-d' )
 			)
 		);
 
