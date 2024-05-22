@@ -467,7 +467,7 @@ if ( ! function_exists( 'mynote_author_posted_date' ) ) {
 		echo '<div class="author-posted-date">';
 
 		if ( $show_avatar ) {
-			echo '<img src="' . esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ) . '" class="rounded-circle poster-avatar" align="middle"> ';
+			echo '<img src="' . esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ) . '" class="rounded-circle poster-avatar" align="middle" alt="作者头像"> ';
 		}
 
 		printf(
@@ -541,7 +541,7 @@ if ( ! function_exists( 'mynote_author_card' ) ) {
 			<h3 class="section-title"><?php esc_html_e( 'Author', 'mynote' ); ?></h3>
 			<aside class="author-card" itemscope itemprop="author" itemtype="http://schema.org/Person">
 				<div class="author-avatar">
-					<img src="<?php echo esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ); ?>" class="rounded-circle" itemprop="image">
+					<img src="<?php echo esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ); ?>" class="rounded-circle" itemprop="image" alt="作者头像">
 				</div>
 				<div class="author-info">
 					<div class="author-title">
