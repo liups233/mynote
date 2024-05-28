@@ -211,11 +211,7 @@ if ( ! function_exists( 'mynote_comment' ) ) {
 									esc_url( get_comment_link( $comment->comment_ID ) ),
 									sprintf( '%1$s @ %2$s', get_comment_date(), get_comment_time() ),
 									get_comment_time( 'c' ),
-									sprintf(
-										/* translators: %s: days */
-										esc_html__( 'commented %s ago', 'mynote' ),
-										esc_html( human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) )
-									)
+									sprintf( '%1$s %2$s', get_comment_date(), get_comment_time() )
 								);
 
 								?>
