@@ -114,6 +114,11 @@ if ( ! function_exists( 'mynote_footer_columns' ) ) {
 				</div>
 				<div class="footer-column-right">
 					<?php mynote_nav( 'social' ); ?>
+					<div style="text-align: center">
+						<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer">
+							<img style="height:17px!important;margin-bottom:6px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc-sa.svg" alt="CC BY-NC-SA Logo">
+						</a>
+					</div>
 				</div>
 			</div>
 		<?php
