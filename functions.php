@@ -303,3 +303,6 @@ require get_parent_theme_file_path( '/inc/template-hook-functions.php' );
  * Hooks for Mynote theme.
  */
 require get_parent_theme_file_path( '/inc/template-hooks.php' );
+
+// Disable auto-sizes to fix bug that WordPress 671 added.
+add_filter( 'wp_img_tag_add_auto_sizes', '__return_false' );
