@@ -259,7 +259,7 @@ if ( ! function_exists( 'mynote_comment_form' ) ) {
 			'title_reply_before'   => '<h3 id="reply-title" class="section-title">',
 			'title_reply_after'    => '</h3>',
 			'class_submit'         => 'btn btn-green my-1',
-			'comment_notes_before' => '<p class="comment-notes">' . __( 'Your email address will not be published.', 'mynote' ) . '</p>',
+			'comment_notes_before' => '<p class="comment-notes">您的电子邮件地址不会公开。留言送出后需要等待审核，请勿重复点击。</p>',
 		);
 		return $comments_args;
 	}
