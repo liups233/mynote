@@ -463,7 +463,7 @@ function mynote_posted_date_button( $show_label = false ) {
  * @return void
  */
 if ( ! function_exists( 'mynote_author_posted_date' ) ) {
-	function mynote_author_posted_date( $show_avatar = false, $avatar_size = 40 ) {
+	function mynote_author_posted_date( $show_avatar = false, $avatar_size = 60 ) {
 		echo '<div class="author-posted-date">';
 
 		if ( $show_avatar ) {
