@@ -38,7 +38,7 @@ class Mynote_Widget_Toc extends WP_Widget {
 	 * Register javascript for the Mynote TOC widget.
 	 */
 	public function mynote_toc_js() {
-		wp_register_script( 'bootstrap-toc', get_template_directory_uri() . '/assets/js/bootstrap-toc.min.js', array( 'jquery' ), '1.0.0' );
+		wp_register_script( 'bootstrap-toc', 'https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js', array( 'jquery' ), '1.0.1' );
 		wp_enqueue_script( 'bootstrap-toc' );
 	}
 
