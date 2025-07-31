@@ -49,7 +49,7 @@ if ( ! function_exists( 'mynote_header_navigation' ) ) {
 			<nav class="navbar navbar-expand-lg navbar-dark <?php echo $addon_navbar_class; ?>" role="navigation">
 				<?php if ( $is_brand_url ) : ?>
 					<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">
-						<img src="<?php echo esc_url( $site_brand_url ); ?>" alt="<?php esc_attr_e( 'Logo', 'mynote' ); ?>" class="logo-img" />
+						<img src="https://www.liups.net/wp-content/uploads/2024/05/cropped-1714579393-mahiro-logo-64x64.webp" alt="<?php esc_attr_e( 'Logo', 'mynote' ); ?>" class="logo-img" width="32" height="32" />
 					</a>
 				<?php endif; ?>
 
@@ -113,10 +113,10 @@ if ( ! function_exists( 'mynote_footer_columns' ) ) {
 					<div><?php mynote_nav( 'footer' ); ?></div>
 					<div>
 						<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer">
-							<img loading="lazy" style="height:17px!important;margin-bottom:6px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc-sa.svg" alt="CC BY-NC-SA Logo">
+							<img loading="lazy" style="height:17px!important;margin-bottom:6px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc-sa.svg" alt="CC BY-NC-SA Logo" />
 						</a>
 						<a href="https://www.foreverblog.cn/" target="_blank" rel="noreferrer">
-							<img style="height:16px!important;margin-bottom:6px;vertical-align:text-bottom;" src="https://img.foreverblog.cn/logo_en_default.png">
+							<img style="height:15px!important;margin-bottom:6px;vertical-align:text-bottom;" src="<?php echo get_template_directory_uri(); ?>/inc/assets/images/foreverblog_logo.webp" alt="Forever Blog Logo" width="108" height="15" />
 						</a>
 					</div>
 				</div>
