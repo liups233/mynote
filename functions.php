@@ -101,7 +101,7 @@ if ( ! function_exists( 'mynote_setup_theme' ) ) {
  */
 function mynote_header_scripts() {
 	if ( 'wp-login.php' !== $GLOBALS['pagenow'] && ! is_admin() ) {
-		wp_register_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array( 'jquery' ), '4.1.0' );
+		wp_register_script( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js', array( 'jquery' ), '4.6.2' );
 		wp_enqueue_script( 'bootstrap' );
 	}
 }
@@ -110,7 +110,7 @@ function mynote_header_scripts() {
  * Add styles
  */
 function mynote_styles() {
-	wp_register_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '4.1.0', 'all' );
+	wp_register_style( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css', array(), '4.6.2', 'all' );
 	wp_enqueue_style( 'bootstrap' );
 
 	wp_register_style( 'fontawesome', get_template_directory_uri() . '/assets/css/fontawesome-all.min.css', array(), '5.1.0', 'all' );
