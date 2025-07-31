@@ -115,6 +115,9 @@ if ( ! function_exists( 'mynote_footer_columns' ) ) {
 						<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer">
 							<img loading="lazy" style="height:17px!important;margin-bottom:6px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc-sa.svg" alt="CC BY-NC-SA Logo">
 						</a>
+						<a href="https://www.foreverblog.cn/" target="_blank" rel="noreferrer">
+							<img style="height:16px!important;margin-bottom:6px;vertical-align:text-bottom;" src="https://img.foreverblog.cn/logo_en_default.png">
+						</a>
 					</div>
 				</div>
 				<div class="footer-column-right">
