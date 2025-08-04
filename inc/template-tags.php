@@ -463,11 +463,11 @@ function mynote_posted_date_button( $show_label = false ) {
  * @return void
  */
 if ( ! function_exists( 'mynote_author_posted_date' ) ) {
-	function mynote_author_posted_date( $show_avatar = false, $avatar_size = 40 ) {
+	function mynote_author_posted_date( $show_avatar = false, $avatar_size = 64 ) {
 		echo '<div class="author-posted-date">';
 
 		if ( $show_avatar ) {
-			echo '<img src="' . esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ) . '" class="rounded-circle poster-avatar" align="middle" alt="作者头像"> ';
+			echo '<img width="40" height="40" src="' . esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ) . '" class="rounded-circle poster-avatar" align="middle" alt="作者头像"> ';
 		}
 
 		printf(
