@@ -535,13 +535,13 @@ if ( ! function_exists( 'mynote_author_card' ) ) {
 	 *
 	 * @return void
 	 */
-	function mynote_author_card( $avatar_size = 96, $icon_size = 'sm' ) {
+	function mynote_author_card( $avatar_size = 128, $icon_size = 'sm' ) {
 		$description = get_the_author_meta( 'description' );
 		?>
 			<h3 class="section-title"><?php esc_html_e( 'Author', 'mynote' ); ?></h3>
 			<aside class="author-card" itemscope itemprop="author" itemtype="http://schema.org/Person">
 				<div class="author-avatar">
-					<img loading="lazy" src="<?php echo esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ); ?>" class="rounded-circle" itemprop="image" alt="作者头像">
+					<img width="96" height="96" loading="lazy" src="<?php echo esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ); ?>" class="rounded-circle" itemprop="image" alt="作者头像">
 				</div>
 				<div class="author-info">
 					<div class="author-title">
