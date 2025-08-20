@@ -422,14 +422,22 @@ if ( ! function_exists( 'mynote_show_category' ) ) {
  */
 function mynote_post_figure() {
 	$thumbnail_caption = get_the_post_thumbnail_caption();
+	$thumbnail_id = get_post_thumbnail_id();
+	$thumbnail_info = wp_get_attachment_image_src( $thumbnail_id, 'large' );
+	$thumbnail_width = $thumbnail_info[1];
+	$thumbnail_height = $thumbnail_info[2];
 	?>
 		<figure style="text-align: center;">
 			<?php
-				the_post_thumbnail(
-					'',
+				echo wp_get_attachment_image(
+					$thumbnail_id, 
+					'large', 
+					false, 
 					array(
 						'itemprop' => 'image',
 						'alt'      => esc_attr( $thumbnail_caption ),
+						'width'    => $thumbnail_width,
+						'height'   => $thumbnail_height,
 					)
 				);
 			?>
