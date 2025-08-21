@@ -2415,3 +2415,15 @@ pre code {
   word-wrap: normal;
   border: 0;
 }
+.related-posts-card {
+  display: block;
+  border-left: 15px #e9ecef solid;
+  background-color: #f8f9fa;
+  border-radius: 3px;
+  margin: 20px 0;
+  padding: 15px 20px;
+}
+.related-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
