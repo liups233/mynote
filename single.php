@@ -79,6 +79,11 @@ get_header();
 							<?php the_tags( '', '' ); ?>
 						</section>
 
+						<section class="related-posts">
+							<h3 class="section-title">你可能也喜欢</h3>
+							<?php echo wpjam_get_related_posts($post_id=null, $args=['number'=>4, 'thumb'=>false]); ?>
+						</section>
+
 						<?php if ( mynote_is_post_author_card() ) : ?>
 							<?php mynote_author_card(); ?>
 						<?php endif; ?>
