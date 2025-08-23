@@ -432,10 +432,10 @@ function mynote_post_figure() {
 					'large', 
 					false, 
 					array(
-						'itemprop'	=> 'image',
-						'alt'		=> esc_attr( $thumbnail_caption ),
-						'width'		=> $thumbnail_width,
-						'height'	=> $thumbnail_height,
+						'itemprop' => 'image',
+						'alt'      => esc_attr( $thumbnail_caption ),
+						'width'    => $thumbnail_width,
+						'height'   => $thumbnail_height,
 					)
 				);
 			?>
@@ -547,7 +547,7 @@ if ( ! function_exists( 'mynote_author_card' ) ) {
 			<h3 class="section-title"><?php esc_html_e( 'Author', 'mynote' ); ?></h3>
 			<aside class="author-card" itemscope itemprop="author" itemtype="http://schema.org/Person">
 				<div class="author-avatar">
-					<img width="96" height="96" loading="lazy" src="<?php echo esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ); ?>" class="rounded-circle" itemprop="image" alt="作者头像">
+					<img width="96" height="96" src="<?php echo esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ); ?>" loading="lazy" class="rounded-circle" itemprop="image" alt="作者头像">
 				</div>
 				<div class="author-info">
 					<div class="author-title">
