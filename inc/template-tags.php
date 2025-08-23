@@ -432,10 +432,10 @@ function mynote_post_figure() {
 					'large', 
 					false, 
 					array(
-						'itemprop' => 'image',
-						'alt'      => esc_attr( $thumbnail_caption ),
-						'width'    => $thumbnail_width,
-						'height'   => $thumbnail_height,
+						'itemprop'	=> 'image',
+						'alt'		=> esc_attr( $thumbnail_caption ),
+						'width'		=> $thumbnail_width,
+						'height'	=> $thumbnail_height,
 					)
 				);
 			?>
