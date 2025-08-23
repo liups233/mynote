@@ -425,7 +425,7 @@ function mynote_post_figure() {
 	$thumbnail_width = $thumbnail_info[1];
 	$thumbnail_height = $thumbnail_info[2];
 	?>
-		<figure class="post-figure-cover">
+		<figure class="post-figure-cover" data-no-lazy="1">
 			<?php
 				echo wp_get_attachment_image(
 					$thumbnail_id, 
