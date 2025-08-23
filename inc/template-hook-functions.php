@@ -113,7 +113,7 @@ if ( ! function_exists( 'mynote_footer_columns' ) ) {
 					<div><?php mynote_nav( 'footer' ); ?></div>
 					<div>
 						<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener nofollow noreferrer">
-							<img style="height:17px!important;margin-bottom:6px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc-sa.svg" alt="CC BY-NC-SA Logo" width="91" height="17"/>
+							<img style="height:17px!important;margin-bottom:6px;vertical-align:text-bottom;" src="<?php echo get_template_directory_uri(); ?>/inc/assets/images/by_nc_sa.webp" alt="CC BY-NC-SA Logo" width="91" height="17"/>
 						</a>
 						<a href="https://www.foreverblog.cn/" target="_blank" rel="nofollow noreferrer">
 							<img style="height:15px!important;margin-bottom:6px;vertical-align:text-bottom;" src="<?php echo get_template_directory_uri(); ?>/inc/assets/images/foreverblog_logo.webp" alt="Forever Blog Logo" width="108" height="15" />
