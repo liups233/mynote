@@ -436,6 +436,7 @@ function mynote_post_figure() {
 						'alt'      => esc_attr( $thumbnail_caption ),
 						'width'    => $thumbnail_width,
 						'height'   => $thumbnail_height,
+						'data-no-lazy' => '1'
 					)
 				);
 			?>
