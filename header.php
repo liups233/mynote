@@ -14,6 +14,7 @@
 ?><!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -22,6 +23,13 @@
 		 * Hook: mynote_head
 		 */
 		do_action( 'mynote_head' );
+
+		if ( is_single() ) {
+			$thumbnail_url = get_the_post_thumbnail_url( null, 'large' );
+			if ( $thumbnail_url ) {
+				echo '<link rel="preload" href="' . esc_url( $thumbnail_url ) . '" as="image" />';
+			}
+		}
 
 		wp_head();
 	?>
