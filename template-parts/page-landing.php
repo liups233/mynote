@@ -27,7 +27,7 @@ if ( has_post_thumbnail() ) {
 		<div class="section-intro d-flex align-items-center<?php echo $intro_style; ?>">
 			<div class="container px-responsive">
 				<div class="d-md-flex align-items-center">
-					<div class="col-12 col-md-7 text-center text-md-left" style="min-height: 100%; overflow: hidden" >
+					<div class="col-12 col-md-7 text-center" style="min-height: 100%; overflow: hidden" >
 						<h1 class="mb-3"><?php the_title(); ?></h1>
 						<?php if ( has_excerpt() ) : ?>
 							<p class="mb4 desc-text" id="header-desc-text">
