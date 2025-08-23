@@ -125,14 +125,12 @@ function mynote_post_thumbnail() {
 			$size = 'post-large';
 		}
 	}
-
-	the_post_thumbnail(
-		$size,
-		array(
-			'class' => 'card-img-top',
-			'alt'   => get_the_title(),
-		)
-	);
+	
+	$thumbnail_id = get_post_thumbnail_id();
+	$thumbnail_info = wp_get_attachment_image_src( $thumbnail_id, $size );
+	$thumbnail_width = $thumbnail_info[1];
+	$thumbnail_url = $thumbnail_info[0];
+	echo '<img src="' . esc_url( $thumbnail_url ) . '" class="card-img-top wp-post-image" alt="' . esc_attr( get_the_title() ) . '" width="' . $thumbnail_width . '" height="" decoding="async" sizes="(max-width: ' . $thumbnail_width . 'px) 100vw, ' . $thumbnail_width . 'px">';
 }
 
 /**
