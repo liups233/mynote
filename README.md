@@ -2,6 +2,8 @@
 
 Mynote is a WordPress theme with preferred features for developers and programmers.
 
+This version is modded by Liups233, used in [Liups233の小站](https://www.liups.net). 
+
 ![Screenshot](./screenshot.png)
 
 A responsive, clean, Markdown friendly WordPress blog theme. It is based on Bootstrap 4 and Fontawesome 5. It is suitable for programming, business, technical, professional, niche and any kind of blogging sites. Mynote has landing-page templates so that can your highly customize your homepage, make your website unique and professional.
