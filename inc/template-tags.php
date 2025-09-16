@@ -608,7 +608,7 @@ if ( ! function_exists( 'mynote_site_info' ) ) {
 
 		// Keeping the theme credit link encourages me to improve this theme better. Thank you.
 		$theme_link = 'https://terryl.in/';
-		echo esc_html__( 'Theme by', 'mynote' ) . ' <a href="' . esc_url( $theme_link ) . '" target="_blank">' . esc_html__( 'Mynote', 'mynote' ) . '</a>. ';
+		echo esc_html__( 'Theme by', 'mynote' ) . ' <a href="' . esc_url( $theme_link ) . '" target="_blank">' . esc_html__( 'Mynote', 'mynote' ) . '</a>. <a href="https://www.liups.net/status/" target="_blank">站点状态见此</a>';
 	}
 }
 
