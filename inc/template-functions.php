@@ -246,7 +246,7 @@ if ( ! function_exists( 'mynote_comment_form' ) ) {
 		$comment_field = '
 			<div class="form-row">
 				<div class="col-sm-12 my-1">
-					<textarea id="comment" name="comment" class="form-control" aria-required="true"></textarea>
+					<textarea id="comment" name="comment" class="form-control" placeholder="在此输入留言内容" aria-required="true"></textarea>
 				</div>
 			</div>
 		';

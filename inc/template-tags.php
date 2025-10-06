@@ -344,10 +344,10 @@ if ( ! function_exists( 'mynote_edit_button' ) ) {
 function mynote_column_control_button() {
 	?>
 		<div class="btn-group column-control">
-			<div class="btn-counter text-only active" data-target="#aside-container" role="button">		
+			<div class="btn-counter text-only active" data-target="#aside-container" role="button" aria-label="开关侧边栏">		
 				<div class="btn"><i class="fas fa-columns"></i></div>
 			</div>
-			<div class="btn-counter text-only" data-target="#sidebar" role="button">		
+			<div class="btn-counter text-only" data-target="#sidebar" role="button" aria-label="开关侧边栏小工具">		
 				<div class="btn"><i class="fas fa-list-ul"></i></div>
 			</div> 
 		</div>
