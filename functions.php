@@ -11,6 +11,11 @@
  * @version 2.0.0
  */
 
+// Fix WordPress 6.9 email problem
+add_action( 'phpmailer_init', static function ( $phpmailer ) {
+        $phpmailer->Sender = '';
+} );
+
 if ( ! function_exists( 'mynote_setup_theme' ) ) {
 
 	function mynote_setup_theme() {
