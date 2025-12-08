@@ -306,3 +306,10 @@ require get_parent_theme_file_path( '/inc/template-hooks.php' );
 
 // Disable auto-sizes to fix bug that WordPress 671 added.
 add_filter( 'wp_img_tag_add_auto_sizes', '__return_false' );
+
+// Gravatar CDN
+function getV2exAvatar($avatar) {
+	$avatar = str_replace(array("www.gravatar.com/avatar","0.gravatar.com/avatar","1.gravatar.com/avatar","2.gravatar.com/avatar","secure.gravatar.com/avatar"),"gravatar.webp.se/avatar",$avatar);
+	return $avatar;
+}
+add_filter('get_avatar', 'getV2exAvatar');
