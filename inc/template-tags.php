@@ -474,7 +474,7 @@ if ( ! function_exists( 'mynote_author_posted_date' ) ) {
 		echo '<div class="author-posted-date">';
 
 		if ( $show_avatar ) {
-			echo '<img width="40" height="40" src="' . esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ) . '" class="rounded-circle poster-avatar" align="middle" alt="作者头像"> ';
+			echo '<img width="40" height="40" src="https://gravatar.webp.se/avatar/f6283355947a09bd508c2a126a4250d6ed75ebf9e4a9181e98aa006e1080c94f?s=64&d=mm&r=pg" class="rounded-circle poster-avatar" align="middle" alt="作者头像"> ';
 		}
 
 		printf(
@@ -548,7 +548,7 @@ if ( ! function_exists( 'mynote_author_card' ) ) {
 			<h3 class="section-title"><?php esc_html_e( 'Author', 'mynote' ); ?></h3>
 			<aside class="author-card" itemscope itemprop="author" itemtype="http://schema.org/Person">
 				<div class="author-avatar">
-					<img width="96" height="96" src="<?php echo esc_url( get_avatar_url( get_the_author_meta( 'ID' ), array( 'size' => $avatar_size ) ) ); ?>" loading="lazy" class="rounded-circle" itemprop="image" alt="作者头像">
+					<img width="96" height="96" src="https://gravatar.webp.se/avatar/f6283355947a09bd508c2a126a4250d6ed75ebf9e4a9181e98aa006e1080c94f?s=128&d=mm&r=pg" loading="lazy" class="rounded-circle" itemprop="image" alt="作者头像">
 				</div>
 				<div class="author-info">
 					<div class="author-title">
