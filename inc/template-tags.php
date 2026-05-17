@@ -424,6 +424,14 @@ function mynote_post_figure() {
 	$thumbnail_info = wp_get_attachment_image_src( $thumbnail_id, 'large' );
 	$thumbnail_width = $thumbnail_info[1];
 	$thumbnail_height = $thumbnail_info[2];
+
+	// 核心修改：获取图片的 ALT 文本，为空则使用文章标题
+	$image_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
+	// 兜底逻辑：没有设置ALT就用文章标题
+	if ( empty( $image_alt ) ) {
+		$image_alt = get_the_title();
+	}
+
 	?>
 		<figure class="post-figure-cover" data-no-lazy="1">
 			<?php
@@ -433,7 +441,8 @@ function mynote_post_figure() {
 					false, 
 					array(
 						'itemprop' => 'image',
-						'alt'      => esc_attr( $thumbnail_caption ),
+						// 替换为正确的 ALT 值
+						'alt'      => esc_attr( $image_alt ),
 						'width'    => $thumbnail_width,
 						'height'   => $thumbnail_height,
 						'data-no-lazy' => '1'
